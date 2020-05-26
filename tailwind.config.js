@@ -75,6 +75,8 @@ module.exports = {
         md: colors.gray[800],
         dk: colors.gray[900],
       },
+      blue: '#007ace',
+      yellow: '#F7E018',
       // bw
       'black': '#000',
       'white': '#fff',
