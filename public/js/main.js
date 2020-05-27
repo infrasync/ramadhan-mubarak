@@ -1,12 +1,13 @@
 (function () {
 
-    var timeElement, eventTime, currentTime, duration, interval, intervalId;
+    var timeElement, eventTime, currentTime, duration, interval, intervalId, ogTitle;
 
     interval = 1000; // 1 second
 
   // get time element
   timeElement = document.querySelector("time");
   titleTimeElement = document.querySelector(".title-time");
+  ogTitle = document.querySelector(".og-title");
     // calculate difference between two times
     eventTime = moment.tz("2021-04-12", "America/Los_Angeles");
     // based on time set in user's computer time / OS
@@ -28,6 +29,7 @@
             // otherwise, show the updated countdown
             timeElement.innerText = Math.floor(duration.asDays()) + " Hari ";
             titleTimeElement.innerText = Math.floor(duration.asDays()) + " Hari Menuju Ramadhan";
+            ogTitle.setAttribute("content", Math.floor(duration.asDays()) + " Hari Menuju Ramadhan")
         }
     }, interval);
 
