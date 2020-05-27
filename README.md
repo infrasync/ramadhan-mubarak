@@ -27,10 +27,6 @@ Harus   melakukan
 2. Install  dependencies yang dibutuhkan:
 
     ```bash
-    Even though this isn't necessarily a starter kit for a proper project, we've included an example of setting up both Purgecss and cssnano to optimize your CSS for production.
-    
-    To build an optimized version of your CSS, simply run:
-    
     # Menggunakan npm
     npm install
     
